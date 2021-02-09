@@ -1,0 +1,22 @@
+.logo {
+    width: 25%;
+    height: auto;
+}
+
+#bookstats {
+    background-color: cadetblue;
+    min-height: 200px;
+}
+
+#bookheader {
+    background-color: darkgray;
+    color: burlywood;
+    padding-bottom: 2px;
+    color:black;
+    font-weight: 500;
+    font-style: italic;
+}
+
+font {
+    color: black;
+}

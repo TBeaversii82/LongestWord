@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Star Coder- Week 2 Challenge</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <img class="logo float-left" src="/img/star_coder.jpg">
+                <h1 class="text-center">Book Stats - Star Coder Week 2 Challenge</h1>
+                <h6>For your challenge: Select a book and print out the <b>longest word</b> in each book. There are a
+                    total of
+                    <B>THREE</B> books. For extra credit print out the <b>total word count</b> and <b>the most used
+                        word</b></h6>
+                <h6>Note: The book text is contained as constants in the attached js file.</h6>
+                <h6>Things you need to do</h6>
+                <ul >
+                    <li>Wire up the buttons to call a function. The dropdown has 2 buttons. Add another one.</li>
+                    <li>Create a function to find the longest word. Create a way to process all three books through one function</li>
+                    <li>Return the results of the function to the screen.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="bookDropDown"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pick a Book
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="bookDropDown">
+                        <button id="Alicebtn" class="dropdown-item" onclick="bookStats('alice')" type="button">Alice In Wonderland</button>
+                        <button id="Harrybtn" class="dropdown-item" onclick="bookStats('harry')" type="button">Harry Potter</button>
+                        <button id="LOTRbtn" class="dropdown-item" onclick="bookStats('lotr')" type="button">Lord of The Rings</button>
+                    </div>
+                </div>
+                <br/>
+                <div id="bookstats" class="border">
+                    <h2 id="bookheader">Book Stats</h2>
+                    <div id="bookoutput">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="js/Sitejs.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
